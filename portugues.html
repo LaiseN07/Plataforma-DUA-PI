@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+<!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+            </div>
+            <h1>Língua Portuguesa</h1>
+            <p>Plataforma DUA-PI • Atividades Adaptadas</p>
+        </div>
+        <link rel="stylesheet" href="style.css">
+    </header>
+<body>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- QUESTÃO 1: INTERPRETAÇÃO TEXTUAL -->
+        <section class="atividade-container" id="questao-1">
+            <h2>Questão 1 – Interpretação Textual</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir texto da Questão 1">🔊 Ouvir Texto</button>
+                </div>
+                
+                <h3>A Planta de Ana</h3>
+                <p class="paragrafo-simplificado">
+                    Ana cuidava de suas plantas todos os dias. Em uma manhã muito quente, percebeu que uma delas estava com as folhas caídas. Ela regou a planta e a colocou em um lugar com menos sol. No dia seguinte, a planta estava bonita e com as folhas verdes novamente.
+                </p>
+
+                <div class="imagem-container">
+                    <img src="ana-regando-planta.jpeg" alt="Ilustração de Ana regando uma pequena planta no jardim com um regador verde." class="img-responsiva">
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>Questão:</strong> Explique, com suas palavras, o que Ana fez para cuidar da planta e por que essa atitude foi importante.</p>
+                
+                <div class="recursos-gravacao">
+    <button class="btn-acessar btn-gravar">
+        🎙️ Gravar Resposta em Áudio
+    </button>
+</div>
+
+<div class="campo-resposta">
+    <label for="resposta-q1">Ou escreva sua resposta:</label>
+    <textarea id="resposta-q1" rows="4" placeholder="Digite sua resposta aqui..."></textarea>
+</div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 2: ORALIDADE -->
+        <section class="atividade-container" id="questao-2">
+            <h2>Questão 2 – Oralidade</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 2">🔊 Ouvir Instruções</button>
+                </div>
+
+                <div class="imagem-container">
+                    <img src="sala-de-aula-acolhimento.jpeg" alt="Ilustração de uma sala de aula com um estudante animado acenando, colega e professora sorrindo." class="img-responsiva">
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>Questão:</strong> Imagine que um colega novo chegou à sua turma. Conte como você o receberia e quais atitudes poderiam ajudá-lo a se sentir acolhido na escola. Organize sua resposta de forma clara e apresente exemplos do cotidiano.</p>
+                
+                <div class="recursos-gravacao">
+                    <button class="btn-acessar btn-gravar">🎙️ Gravar Resposta em Áudio</button>
+                </div>
+
+                <div class="campo-resposta">
+                    <label for="resposta-q2">Ou escreva sua resposta:</label>
+                    <textarea id="resposta-q2" rows="4" placeholder="Digite sua resposta aqui..."></textarea>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Língua Portuguesa - Atividade Adaptada TEA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos complementares de apoio pedagógico e TEA */
+        .routine-box {
+            border: 3px solid #3498db;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .routine-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        /* Quadro de aviso flexível que respeita o Alto Contraste */
+        .notice-box {
+            border: 3px solid #f39c12;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.15rem;
+            margin: 20px 0;
+        }
+        .visual-tip {
+            border-left: 6px solid #1abc9c;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        table.tea-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table.tea-table th, table.tea-table td {
+            border: 2px solid #2c3e50;
+            padding: 14px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        .blank-space {
+            border-bottom: 3px solid currentColor;
+            display: inline-block;
+            min-width: 180px;
+            margin: 0 8px;
+        }
+        .img-tea {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #2c3e50;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+            </div>
+            <h1>Língua Portuguesa</h1>
+            <p>Plataforma DUA-PI • Atividades Adaptadas - TEA</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- ROTEIRO DA ATIVIDADE -->
+        <div class="routine-box">
+            <div class="routine-title">📌 ROTEIRO DA ATIVIDADE</div>
+            <ol style="margin: 0; padding-left: 25px;">
+                <li>Leia as informações ou ouça o áudio.</li>
+                <li>Observe as opções de resposta.</li>
+                <li>Marque apenas <strong>uma</strong> resposta correta ou grave/escreva a sua resposta.</li>
+            </ol>
+        </div>
+
+        <!-- QUESTÃO 1: COMPREENSÃO DE TEXTO (AVISO) -->
+        <section class="atividade-container" id="questao-1" data-correta="B">
+            <h2>PARTE 1 — COMPREENSÃO DE TEXTO</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir texto da Questão 1">🔊 Ouvir Texto</button>
+                </div>
+
+                <div class="imagem-container">
+                    <img src="https://i.pinimg.com/736x/87/84/0c/87840ce2f8c7e6296e1ff507e2b74bb2.jpg">
+                </div>
+
+                <div class="notice-box">
+                    <p style="margin: 0; font-weight: bold; font-size: 1.3rem;">📌 AVISO DA ESCOLA</p>
+                    <p style="margin: 10px 0 0 0;">A <strong>biblioteca</strong> estará <strong>fechada na quarta-feira</strong>.</p>
+                    <p style="margin: 5px 0 0 0;">A biblioteca abre novamente na <strong>quinta-feira</strong>.</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>1. Para que serve este texto?</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Contar uma piada.</button>
+                    <button class="btn-opcao" data-valor="B">B) Dar um aviso sobre a biblioteca.</button>
+                    <button class="btn-opcao" data-valor="C">C) Ensinar uma receita.</button>
+                </div>
+
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 2: GRAMÁTICA -->
+        <section class="atividade-container" id="questao-2" data-correta="B">
+            <h2>PARTE 2 — GRAMÁTICA</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 2">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a frase:</p>
+                <p style="text-align: center; font-size: 1.3rem; padding: 10px; border-radius: 8px;">
+                    <strong>“A turma plantou flores bonitas.”</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="watermarked_img_13554714226591062759.jpg" alt="Crianças a plantar flores" class="img-tea img-responsiva">
+                </div>
+
+                <table class="tea-table">
+                    <thead>
+                        <tr>
+                            <th>SUBSTANTIVO<br><small>(Nome)</small></th>
+                            <th>VERBO<br><small>(Ação)</small></th>
+                            <th>ADJETIVO<br><small>(Qualidade)</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>turma / flores</td>
+                            <td><strong>plantou</strong></td>
+                            <td>bonitas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>2. Qual palavra representa a AÇÃO de fazer algo?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) turma</button>
+                    <button class="btn-opcao" data-valor="B">B) plantou</button>
+                    <button class="btn-opcao" data-valor="C">C) bonitas</button>
+                </div>
+
+                <div class="feedback-resposta"></div>
+
+                <div class="campo-resposta" style="margin-top: 20px;">
+                    <label for="resposta-q2">Ou escreva sua resposta:</label>
+                    <textarea id="resposta-q2" rows="3" placeholder="Digite sua resposta aqui..."></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 3: MENSAGEM -->
+        <section class="atividade-container" id="questao-3" data-correta="B">
+            <h2>PARTE 3 — MENSAGEM</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 3">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Complete a mensagem abaixo:</p>
+                
+                <div class="imagem-container">
+                    <img src="watermarked_img_17444668218855030746.jpg" alt="Alunos a conversar" class="img-tea img-responsiva">
+                </div>
+
+                <div style="border: 2px solid #bdc3c7; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <p><strong>1. INÍCIO:</strong> Olá, <span class="blank-space"></span>!</p>
+                    <p><strong>2. CONVITE:</strong> Você quer estudar comigo <span class="blank-space"></span>?</p>
+                    <p><strong>3. FINAL:</strong> Até mais!</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>3. Qual parte serve para fazer o CONVITE?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Parte 1 (Início)</button>
+                    <button class="btn-opcao" data-valor="B">B) Parte 2 (Convite)</button>
+                    <button class="btn-opcao" data-valor="C">C) Parte 3 (Final)</button>
+                </div>
+
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 4: EXPRESSÕES E FIGURAS DE LINGUAGEM -->
+        <section class="atividade-container" id="questao-4" data-correta="A">
+            <h2>PARTE 4 — EXPRESSÕES</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 4">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Leia a frase:</p>
+                <p style="text-align: center; font-size: 1.3rem; padding: 12px; border-radius: 8px;">
+                    <strong>“Estou morrendo de fome!”</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="menina com fome.jpg" alt="Pessoa com muita fome" class="img-tea img-responsiva">
+                </div>
+
+                <div class="visual-tip">
+                    💡 Esta frase é um EXAGERO. A pessoa não está a morrer de verdade.
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>4. O que essa frase significa?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) A pessoa está com muita fome.</button>
+                    <button class="btn-opcao" data-valor="B">B) A pessoa está no hospital.</button>
+                    <button class="btn-opcao" data-valor="C">C) A pessoa não quer comer.</button>
+                </div>
+
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

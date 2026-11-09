@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma DUA-PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+                <!-- Botão de Sair adicionado aqui -->
+                <button id="btn-sair" onclick="sairDaPlataforma()" aria-label="Sair da plataforma" style="background-color: #d9534f; color: white; border: none; padding: 5px 12px; border-radius: 4px; cursor: pointer;">Sair</button>
+            </div>
+        </div>
+    </header>
+
+    <header class="main-header">
+        <div class="container">
+            <H1>Plataforma DUA-PI</H1>
+            <h3>Educação Inclusiva e Tecnologias Digitais</h3>
+            <p>Plataforma de Apoio a Estudantes e Professores do Ensino Médio</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <h2>Selecione uma Disciplina</h2>
+            <p>Escolha uma das áreas abaixo para acessar os conteúdos e atividades adaptadas:</p>
+        </section>
+
+        <div class="grid-disciplinas">
+            <article class="card-disciplina" id="portugues">
+                <h3>Português</h3>
+                <p>Conteúdos simplificados e leituras adaptadas.</p>
+                <a href="TeladeacessoPortugues.html" class="btn-acessar">Acessar</a>
+            </article>
+
+            <article class="card-disciplina" id="matematica">
+                <h3>Matematica</h3>
+                <p>Desafios lógicos e atividades gamificadas.</p>
+                <a href="TeladeAcessoMatematica.html" class="btn-acessar">Acessar</a>
+            </article>
+
+            <article class="card-disciplina" id="biologia">
+                <h3>Biologia</h3>
+                <p>Glossários acessíveis, mapas mentais e resumos táteis.</p>
+                <a href="TeladeacessoBiologia.html" class="btn-acessar">Acessar</a>
+            </article>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

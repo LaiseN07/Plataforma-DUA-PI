@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Língua Portuguesa - Atividade Adaptada Dislexia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos complementares e tipografia adaptada para Dislexia no DUA */
+        .section-box {
+            border-left: 6px solid #2980b9;
+            padding: 18px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            background-color: rgba(41, 128, 185, 0.08);
+        }
+
+        .section-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        .part-header {
+            background-color: #1b4f72;
+            color: #ffffff;
+            padding: 12px 18px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .notice-box {
+            border: 3px dashed #d35400;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        .notice-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .tip-box {
+            border: 2px solid #f1c40f;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            background-color: rgba(241, 196, 15, 0.1);
+        }
+
+        .visual-reminder {
+            border-left: 5px solid #16a085;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-top: 15px;
+            border-radius: 0 6px 6px 0;
+            background-color: rgba(22, 160, 133, 0.1);
+        }
+
+        table.grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table.grammar-table th, table.grammar-table td {
+            border: 2px solid #bdc3c7;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.05rem;
+        }
+
+        .fill-line {
+            border-bottom: 3px solid currentColor;
+            display: inline-block;
+            min-width: 180px;
+            margin: 0 5px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+            accent-color: #f39c12;
+        }
+
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .signature-line {
+            flex: 1;
+            min-width: 240px;
+            border-top: 2px solid currentColor;
+            padding-top: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+            </div>
+            <h1>Língua Portuguesa</h1>
+            <p>Plataforma DUA-PI • Atividades Adaptadas - Dislexia</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- OBJETIVO DA ATIVIDADE -->
+        <div class="section-box">
+            <div class="section-title">🎯 OBJETIVO</div>
+            <p>Entender textos do dia a dia, identificar classes de palavras, organizar uma pequena mensagem e reconhecer expressões com sentido figurado.</p>
+        </div>
+
+        <!-- COMO FAZER -->
+        <div class="section-box" style="border-left-color: #27ae60; background-color: rgba(39, 174, 96, 0.08);">
+            <div class="section-title">🧭 COMO FAZER</div>
+            <ol style="margin: 0; padding-left: 22px;">
+                <li>Faça <strong>uma parte de cada vez</strong>.</li>
+                <li>Leia devagar e com atenção ou ouça o áudio.</li>
+                <li>Marque a opção correta nos botões.</li>
+                <li>Você pode pedir ajuda para ler sempre que precisar!</li>
+            </ol>
+        </div>
+
+        <!-- PARTE 1: COMPREENSÃO DE TEXTO -->
+        <section class="atividade-container" id="questao-1" data-correta="B">
+            <div class="part-header">📘 PARTE 1 — COMPREENSÃO DE TEXTO</div>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir aviso da Parte 1">🔊 Ouvir Texto</button>
+                </div>
+
+                <p><strong>LEIA O AVISO ABAIXO:</strong></p>
+                
+                <div class="notice-box">
+                    <div class="notice-title">📌 AVISO DA ESCOLA</div>
+                    <p>A <strong>biblioteca</strong> ficará <strong>fechada na quarta-feira</strong> para organização dos livros.</p>
+                    <p>O atendimento volta na <strong>quinta-feira</strong>.</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>1. Para que serve este texto?</strong></p>
+                
+                <div class="tip-box">
+                    💡 <strong>DICA:</strong> Pense no objetivo principal do texto. Ele quer contar uma piada, ensinar algo ou dar um recado importante?
+                </div>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Contar uma piada engraçada.</button>
+                    <button class="btn-opcao" data-valor="B">B) Avisar sobre o funcionamento da biblioteca.</button>
+                    <button class="btn-opcao" data-valor="C">C) Ensinar a fazer uma receita.</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+
+            <hr style="margin: 25px 0; border: none; border-top: 1px dashed #ccc;">
+
+            <div class="questoes-section" id="questao-2" data-correta="C">
+                <p class="enunciado"><strong>2. Quando a biblioteca vai abrir de novo?</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Na terça-feira.</button>
+                    <button class="btn-opcao" data-valor="B">B) Na quarta-feira.</button>
+                    <button class="btn-opcao" data-valor="C">C) Na quinta-feira.</button>
+                </div>
+                <div class="feedback-resposta"></div>
+                <div class="visual-reminder">💡 AVISO = passa uma informação importante.</div>
+            </div>
+        </section>
+
+        <!-- PARTE 2: GRAMÁTICA -->
+        <section class="atividade-container" id="questao-3" data-correta="B">
+            <div class="part-header">🖍️ PARTE 2 — GRAMÁTICA</div>
+
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Parte 2">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a frase abaixo:</p>
+                <p style="text-align: center; font-size: 1.2rem;"><strong>“A turma plantou flores bonitas.”</strong></p>
+                
+                <table class="grammar-table">
+                    <thead>
+                        <tr>
+                            <th>SUBSTANTIVO<br><small>(Nome)</small></th>
+                            <th>VERBO<br><small>(Ação)</small></th>
+                            <th>ADJETIVO<br><small>(Característica)</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>turma / flores</strong></td>
+                            <td><strong>plantou</strong></td>
+                            <td><strong>bonitas</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>3. Qual palavra indica uma AÇÃO (algo feito por alguém)?</strong></p>
+                
+                <div class="tip-box">
+                    💡 <strong>LEMBRETE:</strong><br>
+                    • <strong>Substantivo:</strong> Nome de coisas, pessoas ou lugares (Ex: flores, turma).<br>
+                    • <strong>Verbo:</strong> Ação ou movimento (Ex: plantou, estudou).<br>
+                    • <strong>Adjetivo:</strong> Qualidade ou característica (Ex: bonitas, grandes).
+                </div>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) turma</button>
+                    <button class="btn-opcao" data-valor="B">B) plantou</button>
+                    <button class="btn-opcao" data-valor="C">C) bonitas</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+
+            <hr style="margin: 25px 0; border: none; border-top: 1px dashed #ccc;">
+
+            <div class="questoes-section" id="questao-4" data-correta="A">
+                <p class="enunciado"><strong>4. Qual sinal de pontuação devemos usar para fazer uma PERGUNTA?</strong></p>
+                <p style="font-size: 1.1rem;">“Você terminou a atividade<span class="fill-line"></span>”</p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) ? (Ponto de interrogação - para perguntas)</button>
+                    <button class="btn-opcao" data-valor="B">B) , (Vírgula - para pequena pausa)</button>
+                    <button class="btn-opcao" data-valor="C">C) . (Ponto final - para encerrar uma frase)</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- PARTE 3: ORGANIZANDO UM TEXTO -->
+        <section class="atividade-container" id="questao-5" data-correta="B">
+            <div class="part-header">✍️ PARTE 3 — ORGANIZANDO UM TEXTO</div>
+
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Parte 3">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Vamos organizar uma mensagem para convidar um amigo para estudar.</p>
+
+                <div style="border: 2px solid #bdc3c7; padding: 18px; border-radius: 8px; margin-bottom: 20px;">
+                    <p><strong>1. INÍCIO:</strong> Olá, <span class="fill-line"></span>!</p>
+                    <p><strong>2. CONVITE:</strong> Você quer estudar comigo <span class="fill-line"></span>?</p>
+                    <p><strong>3. FINAL:</strong> Até mais!</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>5. Qual parte da mensagem traz o CONVITE principal?</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Parte 1 — Início ("Olá...")</button>
+                    <button class="btn-opcao" data-valor="B">B) Parte 2 — Convite ("Você quer estudar...")</button>
+                    <button class="btn-opcao" data-valor="C">C) Parte 3 — Final ("Até mais!")</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- PARTE 4: SENTIDO FIGURADO -->
+        <section class="atividade-container" id="questao-6" data-correta="A">
+            <div class="part-header">💭 PARTE 4 — SENTIDO FIGURADO</div>
+
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Parte 4">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Leia a frase abaixo:</p>
+                <p style="text-align: center; font-size: 1.25rem;"><strong>“Estou morrendo de fome!”</strong></p>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>6. O que a pessoa realmente quer dizer com essa frase?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Que está com muita fome.</button>
+                    <button class="btn-opcao" data-valor="B">B) Que está correndo perigo de vida.</button>
+                    <button class="btn-opcao" data-valor="C">C) Que não quer comer nada.</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+
+            <hr style="margin: 25px 0; border: none; border-top: 1px dashed #ccc;">
+
+            <div class="questoes-section" id="questao-7" data-correta="A">
+                <p class="enunciado"><strong>7. Quando usamos um exagero para dar ênfase (como "morrendo de fome"), chamamos essa figura de linguagem de:</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Hipérbole (expressão com exagero).</button>
+                    <button class="btn-opcao" data-valor="B">B) Notícia (relato de um fato).</button>
+                    <button class="btn-opcao" data-valor="C">C) Receita (instrução de culinária).</button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- REVISÃO E AUTOAVALIAÇÃO -->
+        <div class="section-box" style="border-left-color: #f39c12; background-color: rgba(243, 156, 18, 0.08); margin-top: 35px;">
+            <div class="section-title">✅ REVISÃO — COMO FOI FAZER A ATIVIDADE?</div>
+            <label class="checklist-item"><input type="checkbox"> Consegui fazer sozinho(a).</label>
+            <label class="checklist-item"><input type="checkbox"> Precisei de ajuda para ler algumas partes.</label>
+            <label class="checklist-item"><input type="checkbox"> Quero fazer uma pausa antes de terminar.</label>
+        </div>
+
+        <!-- ÁREA DE ASSINATURA -->
+        <div class="signature-area">
+            <div class="signature-line">Professor(a): ______________________________</div>
+            <div class="signature-line">Assinatura: ______________________________</div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
