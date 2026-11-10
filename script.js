@@ -347,74 +347,102 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 });
-/* tela de login */
-function autenticarUsuario(event) {
-    event.preventDefault(); // Evita o recarregamento padrão da página
-    
-    const usuario = document.getElementById('usuario').value;
-
-    if (usuario) {
-        // Redireciona para a página principal com a seleção de disciplinas
-        window.location.href = 'TelaPrincipal.html';
-    }
-}
-function sairDaPlataforma() {
-    // Redireciona o usuário de volta para a tela de login
-    window.location.href = 'index.html';
-}
-
-// 1. Cole suas credenciais obtidas no Passo 2
+// 1. Sua configuração real do Firebase (MANTIDA INTACTA)
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY_AQUI",
-  authDomain: "SEU_PROJECT_ID.firebaseapp.com",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_PROJECT_ID.appspot.com",
-  messagingSenderId: "SEU_SENDER_ID",
-  appId: "SEU_APP_ID"
+  apiKey: "AIzaSyAhSU2t_nrRF4IZY4NHTApK6JEu0pR0Ax4",
+  authDomain: "plataforma-dua-pi.firebaseapp.com",
+  projectId: "plataforma-dua-pi",
+  storageBucket: "plataforma-dua-pi.firebasestorage.app",
+  messagingSenderId: "557324288654",
+  appId: "1:557324288654:web:74adbb9b20e952bcb97fdf"
 };
 
-// 2. Inicializa o Firebase e o banco Firestore
-firebase.initializeApp(firebaseConfig);
+// Inicializa o Firebase apenas se ainda não foi inicializado
+if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+}
 const db = firebase.firestore();
 
-// 3. Controle da seleção de perfil (Aluno / Professor)
+// 2. Controle da seleção de perfil (Aluno / Professor)
 let perfilSelecionado = "aluno"; // padrão
 
 const btnsPerfil = document.querySelectorAll(".btn-perfil");
 btnsPerfil.forEach(btn => {
-  btn.addEventListener("click", () => {
-    btnsPerfil.forEach(b => {
-      b.classList.remove("active");
-      b.setAttribute("aria-pressed", "false");
+    btn.addEventListener("click", () => {
+        btnsPerfil.forEach(b => {
+            b.classList.remove("active");
+            b.setAttribute("aria-pressed", "false");
+        });
+        btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
+        perfilSelecionado = btn.getAttribute("data-perfil");
     });
-    btn.classList.add("active");
-    btn.setAttribute("aria-pressed", "true");
-    perfilSelecionado = btn.getAttribute("data-perfil");
-  });
 });
 
-// 4. Capturar o envio do formulário e salvar no Firestore
+// 3. Validação e Autocadastro no Firestore
 const form = document.querySelector("form");
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // Impede a página de recarregar
+if (form) {
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Impede a página de recarregar
 
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
 
-  // Gravar no Firestore dentro da coleção "usuarios"
-  db.collection("usuarios").add({
-    usuario: username,
-    senha: password, // Em sistemas reais, senhas devem ser criptografadas via Firebase Auth
-    perfil: perfilSelecionado,
-    dataAcesso: new Date()
-  })
-  .then(() => {
-    alert("Dados gravados com sucesso no Firebase!");
-    window.location.href = "TelaPricipal.html"; // Redireciona para a página interna
-  })
-  .catch((error) => {
-    console.error("Erro ao gravar dados: ", error);
-    alert("Ocorreu um erro ao salvar as informações.");
-  });
-});
+        const username = usernameInput ? usernameInput.value.trim() : "";
+        const password = passwordInput ? passwordInput.value.trim() : "";
+
+        if (!username || !password) {
+            alert("Por favor, preencha o usuário e a senha.");
+            return;
+        }
+
+        // Busca se o nome de usuário já existe na coleção
+        db.collection("usuarios")
+            .where("usuario", "==", username)
+            .get()
+            .then((querySnapshot) => {
+                if (!querySnapshot.empty) {
+                    // USUÁRIO JÁ EXISTE: verificar se a senha está correta
+                    let senhaCorreta = false;
+                    
+                    querySnapshot.forEach((doc) => {
+                        if (doc.data().senha === password) {
+                            senhaCorreta = true;
+                        }
+                    });
+
+                    if (senhaCorreta) {
+                        alert("Login realizado com sucesso!");
+                        window.location.href = "TelaPrincipal.html";
+                    } else {
+                        alert("Senha incorreta para este usuário!");
+                    }
+                } else {
+                    // USUÁRIO NOVO: cadastrar automaticamente no Firestore
+                    db.collection("usuarios").add({
+                        usuario: username,
+                        senha: password,
+                        perfil: perfilSelecionado,
+                        dataCadastro: new Date()
+                    })
+                    .then(() => {
+                        alert("Novo usuário cadastrado com sucesso! Bem-vindo(a).");
+                        window.location.href = "TelaPrincipal.html";
+                    })
+                    .catch((error) => {
+                        console.error("Erro ao cadastrar novo usuário:", error);
+                        alert("Erro ao cadastrar usuário. Tente novamente.");
+                    });
+                }
+            })
+            .catch((error) => {
+                console.error("Erro ao consultar usuário:", error);
+                alert("Erro ao conectar ao banco de dados. Tente novamente.");
+            });
+    });
+}
+
+function sairDaPlataforma() {
+    window.location.href = "index.html";
+}
