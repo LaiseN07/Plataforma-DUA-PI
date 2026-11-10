@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática - Atividade Adaptada TEA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos complementares de apoio pedagógico e TEA */
+        .atividade-container {
+            background-color: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        .routine-box {
+            background-color: #eaf2f8;
+            border: 3px solid #3498db;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .routine-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #1b4f72;
+            margin-bottom: 12px;
+        }
+        .notice-box {
+            background-color: #fff8e7;
+            border: 3px solid #f39c12;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.15rem;
+            margin: 20px 0;
+        }
+        .visual-tip {
+            background-color: #e8f8f5;
+            border-left: 6px solid #1abc9c;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            font-weight: bold;
+            color: #116a5b;
+        }
+        table.tea-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table.tea-table th, table.tea-table td {
+            border: 2px solid #2c3e50;
+            padding: 14px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        table.tea-table th {
+            background-color: #eaeded;
+        }
+        .blank-space {
+            border-bottom: 3px solid #000;
+            display: inline-block;
+            min-width: 180px;
+            margin: 0 8px;
+        }
+        .img-tea {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid #2c3e50;
+            margin: 20px 0;
+        }
+        .enunciado {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            font-family: inherit;
+            font-size: 1.1rem;
+            padding: 12px;
+            border: 2px solid #bdc3c7;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+            </div>
+            <h1>Matemática</h1>
+            <p>Plataforma DUA-PI • Atividades Adaptadas (TEA)</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- ROTEIRO DA ATIVIDADE -->
+        <div class="routine-box">
+            <div class="routine-title">📌 ROTEIRO DA ATIVIDADE</div>
+            <ol style="margin: 0; padding-left: 25px;">
+                <li>Leia as informações ou ouça o áudio.</li>
+                <li>Observe as opções de resposta.</li>
+                <li>Marque apenas <strong>uma</strong> resposta correta ou escreva a sua resposta.</li>
+            </ol>
+        </div>
+
+        <!-- QUESTÃO 1: MATEMÁTICA FINANCEIRA PRÁTICA -->
+        <section class="atividade-container" id="questao-1" data-correta="B">
+            <h2>PARTE 1 — MATEMÁTICA FINANCEIRA PRÁTICA</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir texto da Questão 1">🔊 Ouvir Texto</button>
+                </div>
+
+                <div class="imagem-container">
+                    <img src="compra na padaria.jpeg" alt="Nota de 5 reais e pão de 3 reais" class="img-tea img-responsiva">
+                </div>
+
+                <div class="notice-box">
+                    <p style="margin: 0; font-weight: bold; color: #d35400; font-size: 1.3rem;">🥖 COMPRA NA PADARIA</p>
+                    <p style="margin: 10px 0 0 0;">Lucas foi à padaria e comprou um pão que custa <strong>R$ 3,00</strong>.</p>
+                    <p style="margin: 5px 0 0 0;">Ele pagou com uma nota de 💵 <strong>R$ 5,00</strong>.</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>1. Quanto Lucas deve receber de troco?</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) R$ 1,00</button>
+                    <button class="btn-opcao" data-valor="B">B) R$ 2,00</button>
+                    <button class="btn-opcao" data-valor="C">C) R$ 3,00</button>
+                    <button class="btn-opcao" data-valor="D">D) R$ 5,00</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 2: ORGANIZAÇÃO TEMPORAL -->
+        <section class="atividade-container" id="questao-2" data-correta="B">
+            <h2>PARTE 2 — ORGANIZAÇÃO TEMPORAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 2">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a sequência dos dias da semana:</p>
+                <p style="text-align: center; font-size: 1.3rem; background-color: #f4f6f7; padding: 10px; border-radius: 8px;">
+                    <strong>Segunda ➔ Terça ➔ Quarta ➔ Quinta ➔ Sexta</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="semana.jpeg" alt="Calendário visual da semana" class="img-tea img-responsiva">
+                </div>
+
+                <table class="tea-table">
+                    <thead>
+                        <tr>
+                            <th>HOJE</th>
+                            <th>1 DIA DEPOIS</th>
+                            <th>2 DIAS DEPOIS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>Quinta-feira</td>
+                            <td><strong>Sexta-feira</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>2. Hoje é quarta-feira. A aula de natação acontece 2 dias depois. Em qual dia será a aula?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Terça-feira</button>
+                    <button class="btn-opcao" data-valor="B">B) Quinta-feira</button>
+                    <button class="btn-opcao" data-valor="C">C) Sexta-feira</button>
+                    <button class="btn-opcao" data-valor="D">D) Sábado</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+
+                <div class="campo-resposta" style="margin-top: 20px;">
+                    <label for="resposta-q2" style="font-weight: bold; display: block; margin-bottom: 8px;">Ou escreva sua resposta:</label>
+                    <textarea id="resposta-q2" rows="3" placeholder="Digite sua resposta aqui..."></textarea>
+                    
+                    <!-- Botão de gravar áudio posicionado na questão de escrita -->
+                    <div class="recursos-gravacao" style="margin-top: 12px;">
+                        <button class="btn-acessar btn-gravar">🎙️ Gravar Resposta em Áudio</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 3: ESTATÍSTICA VISUAL -->
+        <section class="atividade-container" id="questao-3" data-correta="C">
+            <h2>PARTE 3 — ESTATÍSTICA VISUAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 3">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a quantidade de frutas na cesta:</p>
+                
+                <div class="imagem-container">
+                    <img src="cestas de frutas.jpeg" alt="Cesta de frutas com maçãs, bananas e laranjas" class="img-tea img-responsiva">
+                </div>
+
+                <div style="background-color: #f8f9fa; border: 2px solid #bdc3c7; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                    <p style="margin: 5px 0;">🍎 🍎 🍎 (Maçãs: 3)</p>
+                    <p style="margin: 5px 0;">🍌 🍌 (Bananas: 2)</p>
+                    <p style="margin: 5px 0;">🍊 🍊 🍊 🍊 🍊(Laranjas: 5)</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>3. Qual fruta aparece em maior quantidade na cesta?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Maçã</button>
+                    <button class="btn-opcao" data-valor="B">B) Banana</button>
+                    <button class="btn-opcao" data-valor="C">C) Laranja</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 4: GEOMETRIA ESPACIAL -->
+        <section class="atividade-container" id="questao-4" data-correta="C">
+            <h2>PARTE 4 — GEOMETRIA ESPACIAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 4">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Forma geométrica:</p>
+                <p style="text-align: center; font-size: 1.3rem; color: #2980b9; background-color: #ebf5fb; padding: 12px; border-radius: 8px;">
+                    <strong>CUBO (lados quadrados iguais)</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="cubo.jpeg" alt="Exemplo de um cubo e objetos cotidianos" class="img-tea img-responsiva">
+                </div>
+
+                <div class="visual-tip">
+                    💡 Dica Visual: O cubo se parece com uma caixa com todos os lados exatamente do mesmo tamanho.
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>4. Qual dos objetos abaixo tem o formato de um CUBO?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Uma bola de futebol</button>
+                    <button class="btn-opcao" data-valor="B">B) Uma lata de refrigerante</button>
+                    <button class="btn-opcao" data-valor="C">C) Um dado de jogo de tabuleiro</button>
+                    <button class="btn-opcao" data-valor="D">D) Um chapéu de aniversário</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

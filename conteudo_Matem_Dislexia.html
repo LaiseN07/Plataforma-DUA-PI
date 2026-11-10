@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática - Atividade Adaptada Dislexia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Importação de fonte amigável para leitura/dislexia */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+        /* Estilos e diretrizes para acessibilidade na Dislexia */
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+            word-spacing: 0.1em;
+            background-color: #fcfcf9;
+            color: #1a1a1a;
+        }
+
+        p, label, td, th, li {
+            font-size: 1.15rem;
+        }
+
+        h1, h2, h3 {
+            letter-spacing: 0.06em;
+            word-spacing: 0.12em;
+        }
+
+        /* Container Principal das Atividades */
+        .atividade-container {
+            background-color: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        /* Roteiro da Atividade */
+        .routine-box {
+            background-color: #f0f7fc;
+            border: 3px solid #2980b9;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .routine-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #1b4f72;
+            margin-bottom: 16px;
+            letter-spacing: 0.06em;
+        }
+
+        .routine-box ol li {
+            margin-bottom: 10px;
+        }
+
+        /* Caixas de Destaque */
+        .notice-box {
+            background-color: #fff9e6;
+            border: 3px solid #e67e22;
+            padding: 22px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 25px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Dicas e Apoios Visuais */
+        .visual-tip {
+            background-color: #e8f8f5;
+            border-left: 8px solid #16a085;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 700;
+            color: #0e6251;
+            line-height: 1.8;
+        }
+
+        /* Tabelas Acessíveis */
+        table.dislexia-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid #2c3e50;
+        }
+
+        table.dislexia-table th, table.dislexia-table td {
+            border: 1px solid #bdc3c7;
+            padding: 16px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        table.dislexia-table th {
+            background-color: #d5dbdb;
+            color: #1b2631;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+        }
+
+        table.dislexia-table td {
+            background-color: #ffffff;
+        }
+
+        /* Imagens Responsivas e Claras */
+        .img-dislexia {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #2c3e50;
+            margin: 22px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .enunciado {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            line-height: 1.8;
+        }
+
+        textarea {
+            width: 100%;
+            font-family: inherit;
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            padding: 12px;
+            border: 2px solid #a6acaf;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea:focus {
+            border-color: #2980b9;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">🌓 Alto Contraste</button>
+                <button id="btn-aumentar" aria-label="Aumentar fonte">A+</button>
+                <button id="btn-diminuir" aria-label="Diminuir fonte">A-</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">← Voltar para o Início</a>
+            </div>
+            <h1>Matemática</h1>
+            <p>Plataforma DUA-PI • Atividades Adaptadas (Dislexia)</p>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- ROTEIRO DA ATIVIDADE -->
+        <div class="routine-box">
+            <div class="routine-title">📌 ROTEIRO DA ATIVIDADE</div>
+            <ol style="margin: 0; padding-left: 25px;">
+                <li>Leia as informações ou ouça o áudio.</li>
+                <li>Observe as opções de resposta.</li>
+                <li>Marque apenas <strong>uma</strong> resposta correta ou escreva a sua resposta.</li>
+            </ol>
+        </div>
+
+        <!-- QUESTÃO 1: MATEMÁTICA FINANCEIRA PRÁTICA -->
+        <section class="atividade-container" id="questao-1" data-correta="B">
+            <h2>PARTE 1 — MATEMÁTICA FINANCEIRA PRÁTICA</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir texto da Questão 1">🔊 Ouvir Texto</button>
+                </div>
+
+                <div class="imagem-container">
+                    <img src="compra na padaria.jpeg" alt="Nota de 5 reais e pão de 3 reais" class="img-dislexia img-responsiva">
+                </div>
+
+                <div class="notice-box">
+                    <p style="margin: 0; font-weight: 800; color: #d35400; font-size: 1.4rem; letter-spacing: 0.06em;">🥖 COMPRA NA PADARIA</p>
+                    <p style="margin: 12px 0 0 0;">Lucas foi à padaria e comprou um pão que custa <strong>R$ 3,00</strong>.</p>
+                    <p style="margin: 8px 0 0 0;">Ele pagou com uma nota de 💵 <strong>R$ 5,00</strong>.</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>1. Quanto Lucas deve receber de troco?</strong></p>
+                
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) R$ 1,00</button>
+                    <button class="btn-opcao" data-valor="B">B) R$ 2,00</button>
+                    <button class="btn-opcao" data-valor="C">C) R$ 3,00</button>
+                    <button class="btn-opcao" data-valor="D">D) R$ 5,00</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 2: ORGANIZAÇÃO TEMPORAL -->
+        <section class="atividade-container" id="questao-2" data-correta="B">
+            <h2>PARTE 2 — ORGANIZAÇÃO TEMPORAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 2">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a sequência dos dias da semana:</p>
+                <p style="text-align: center; font-size: 1.3rem; background-color: #f2f4f4; padding: 14px; border-radius: 8px; border: 2px solid #d5dbdb;">
+                    <strong>Segunda ➔ Terça ➔ Quarta ➔ Quinta ➔ Sexta</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="semana.jpeg" alt="Calendário visual da semana" class="img-dislexia img-responsiva">
+                </div>
+
+                <table class="dislexia-table">
+                    <thead>
+                        <tr>
+                            <th>HOJE</th>
+                            <th>1 DIA DEPOIS</th>
+                            <th>2 DIAS DEPOIS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>Quinta-feira</td>
+                            <td><strong>Sexta-feira</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>2. Hoje é quarta-feira. A aula de natação acontece 2 dias depois. Em qual dia será a aula?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Terça-feira</button>
+                    <button class="btn-opcao" data-valor="B">B) Quinta-feira</button>
+                    <button class="btn-opcao" data-valor="C">C) Sexta-feira</button>
+                    <button class="btn-opcao" data-valor="D">D) Sábado</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+
+                <div class="campo-resposta" style="margin-top: 22px;">
+                    <label for="resposta-q2" style="font-weight: 700; display: block; margin-bottom: 8px;">Ou escreva sua resposta:</label>
+                    <textarea id="resposta-q2" rows="3" placeholder="Digite sua resposta aqui..."></textarea>
+                    
+                    <!-- Botão de gravar áudio posicionado apenas na questão de escrita -->
+                    <div class="recursos-gravacao" style="margin-top: 12px;">
+                        <button class="btn-acessar btn-gravar">🎙️ Gravar Resposta em Áudio</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 3: ESTATÍSTICA VISUAL -->
+        <section class="atividade-container" id="questao-3" data-correta="C">
+            <h2>PARTE 3 — ESTATÍSTICA VISUAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 3">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Observe a quantidade de frutas na cesta:</p>
+                
+                <div class="imagem-container">
+                    <img src="cestas de frutas.jpeg" alt="Cesta de frutas com maçãs, bananas e laranjas" class="img-dislexia img-responsiva">
+                </div>
+
+                <div style="background-color: #f8f9fa; border: 2px solid #bdc3c7; padding: 22px; border-radius: 12px; margin-bottom: 22px; line-height: 2;">
+                    <p style="margin: 6px 0;">🍎 🍎 🍎 (Maçãs: 3)</p>
+                    <p style="margin: 6px 0;">🍌 🍌 (Bananas: 2)</p>
+                    <p style="margin: 6px 0;">🍊 🍊 🍊 🍊 🍊(Laranjas: 5)</p>
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>3. Qual fruta aparece em maior quantidade na cesta?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Maçã</button>
+                    <button class="btn-opcao" data-valor="B">B) Banana</button>
+                    <button class="btn-opcao" data-valor="C">C) Laranja</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 4: GEOMETRIA ESPACIAL -->
+        <section class="atividade-container" id="questao-4" data-correta="C">
+            <h2>PARTE 4 — GEOMETRIA ESPACIAL</h2>
+            
+            <div class="texto-adaptado">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir instruções da Questão 4">🔊 Ouvir Instruções</button>
+                </div>
+
+                <p>Forma geométrica:</p>
+                <p style="text-align: center; font-size: 1.3rem; color: #1b4f72; background-color: #ebf5fb; padding: 14px; border-radius: 8px; border: 2px solid #a9cce3;">
+                    <strong>CUBO (lados quadrados iguais)</strong>
+                </p>
+
+                <div class="imagem-container">
+                    <img src="cubo.jpeg" alt="Exemplo de um cubo e objetos cotidianos" class="img-dislexia img-responsiva">
+                </div>
+
+                <div class="visual-tip">
+                    💡 Dica Visual: O cubo se parece com uma caixa com todos os lados exatamente do mesmo tamanho.
+                </div>
+            </div>
+
+            <div class="questoes-section">
+                <p class="enunciado"><strong>4. Qual dos objetos abaixo tem o formato de um CUBO?</strong></p>
+
+                <div class="opcoes-container">
+                    <button class="btn-opcao" data-valor="A">A) Uma bola de futebol</button>
+                    <button class="btn-opcao" data-valor="B">B) Uma lata de refrigerante</button>
+                    <button class="btn-opcao" data-valor="C">C) Um dado de jogo de tabuleiro</button>
+                    <button class="btn-opcao" data-valor="D">D) Um chapéu de aniversário</button>
+                </div>
+
+                <div class="feedback-resposta" style="margin-top: 10px; font-weight: bold;"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

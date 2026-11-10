@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologia - DUA-PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">
+                    🌓 Alto Contraste
+                </button>
+
+                <button id="btn-aumentar" aria-label="Aumentar fonte">
+                    A+
+                </button>
+
+                <button id="btn-diminuir" aria-label="Diminuir fonte">
+                    A-
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+
+        <div class="container">
+
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">
+                    ← Voltar para o Início
+                </a>
+            </div>
+
+            <h1>Biologia</h1>
+
+            <p>
+                Plataforma DUA-PI • Conteúdos e Atividades de Biologia
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+
+      
+        <!-- FAIXA: FOTOSSÍNTESE -->
+
+        <div class="titulo-conteudo">
+            <h2>🌱 Fotossíntese</h2>
+        </div>
+
+
+        <!-- TEXTO EXPLICATIVO DA FOTOSSÍNTESE -->
+
+        <section class="atividade-container" id="introducao-fotossintese">
+
+            <h2>O que é a Fotossíntese?</h2>
+
+            <div class="texto-adaptado">
+
+                <div class="audio-player">
+
+                    <button class="btn-acessar"
+                        aria-label="Ouvir texto sobre Fotossíntese">
+                        🔊 Ouvir Texto
+                    </button>
+
+                </div>
+
+
+                <p class="paragrafo-simplificado">
+
+                    A <strong>fotossíntese</strong> é o processo que as plantas usam para fabricar o seu próprio alimento e produzir energia para crescer.
+
+                </p>
+
+
+                <h3 style="margin-top: 15px;">
+                    Recursos básicos do ambiente:
+                </h3>
+
+
+                <ul class="lista-acessivel">
+
+                    <li>
+                        <strong>H₂O (Água):</strong>
+                        Absorvida pelas raízes, serve como fonte de elétrons e hidrogênio.
+                    </li>
+
+                    <li>
+                        <strong>CO₂ (Dióxido de Carbono):</strong>
+                        Absorvido pelos estômatos das folhas, serve como base de carbono para construir o açúcar.
+                    </li>
+
+                    <li>
+                        <strong>Fótons (Luz Solar):</strong>
+                        A energia que vai quebrar e colar as moléculas.
+                    </li>
+
+                </ul>
+
+
+                <p class="paragrafo-simplificado" style="margin-top: 15px;">
+
+                    Dentro das células das folhas, existem organelas chamadas <strong>cloroplastos</strong>. Eles funcionam como usinas de energia. Ali dentro está a <strong>clorofila</strong>, um pigmento capaz de absorver os fótons da luz.
+
+                </p>
+
+
+                <h3 style="margin-top: 15px;">
+                    O que acontece com essa transformação:
+                </h3>
+
+
+                <ul class="lista-acessivel">
+
+                    <li>
+                        <strong>O Oxigênio:</strong>
+                        É a sobra da água. A planta não usa, então ela joga para o ar (que é o gás que nós respiramos).
+                    </li>
+
+                    <li>
+                        <strong>A Glicose (Açúcar):</strong>
+                        A planta junta o resto da água com o gás do ar e fabrica açúcar. Esse açúcar é o combustível que ela queima para ter energia, crescer e sobreviver.
+                    </li>
+
+                </ul>
+
+
+                <!-- Imagem do Diagrama Geral da Fotossíntese -->
+
+                <div class="imagem-container">
+
+                    <img
+                        src="diagrama-fotossintese.jpeg"
+                        alt="Ilustração explicativa mostrando a planta absorvendo luz solar, dióxido de carbono e água, e produzindo glicose e oxigênio."
+                        class="img-responsiva"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUESTÃO 1 -->
+
+        <section class="atividade-container" id="questao-1">
+
+            <h2>Questão 1 – Complete as Lacunas</h2>
+
+            <div class="questoes-section">
+
+                <p class="enunciado">
+                    Use as palavras do quadro abaixo para completar as frases:
+                </p>
+
+
+                <div class="quadro-palavras">
+
+                    <strong>Palavras:</strong>
+                    Água — Oxigênio — Glicose — Sol
+
+                </div>
+
+
+                <div class="campo-resposta-lacuna">
+
+                    <p>
+                        a) Para ligar a sua "fábrica" de energia, a planta captura a luz do
+                        <input type="text" id="q1-a" placeholder="resposta">.
+                    </p>
+
+                    <p>
+                        b) A planta quebra a
+                        <input type="text" id="q1-b" placeholder="resposta">
+                        que vem da raiz para começar o processo.
+                    </p>
+
+                    <p>
+                        c) O
+                        <input type="text" id="q1-c" placeholder="resposta">
+                        é a sobra desse processo e vai para o ar que nós respiramos.
+                    </p>
+
+                    <p>
+                        d) O açúcar que a planta fabrica para comer e crescer se chama
+                        <input type="text" id="q1-d" placeholder="resposta">.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUESTÃO 2 -->
+
+        <section class="atividade-container" id="questao-2">
+
+            <h2>Questão 2 – Descubra o Personagem</h2>
+
+            <div class="questoes-section">
+
+
+                <!-- Charada 1 -->
+
+                <div class="charada-card">
+
+                    <p>
+                        <strong>Pista 1:</strong>
+                        Venho lá do céu. Sem mim, a fábrica da folha fica totalmente sem energia e não consegue quebrar a água. Quem sou eu? ☀️
+                        <em>(Dica: Começa com L)</em>
+                    </p>
+
+
+                    <div class="recursos-gravacao">
+
+                        <button class="btn-acessar btn-gravar">
+                            🎙️ Gravar Resposta em Áudio
+                        </button>
+
+                    </div>
+
+
+                    <div class="campo-resposta">
+
+                        <input
+                            type="text"
+                            id="q2-charada1"
+                            placeholder="Digite a resposta aqui..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Charada 2 -->
+
+                <div class="charada-card" style="margin-top: 20px;">
+
+                    <p>
+                        <strong>Pista 2:</strong>
+                        Sou um açúcar feito com a força do Sol e o gás do ar. A planta me usa para ganhar energia, ficar forte e crescer. Quem sou eu? 🔋
+                        <em>(Dica: Começa com G)</em>
+                    </p>
+
+
+                    <div class="imagem-container" style="margin: 15px 0;">
+
+                        <img
+                            src="glicose-folha.jpeg"
+                            alt="Desenho ilustrando uma folha transformando água e gás do ar em um cubo de glicose."
+                            class="img-responsiva"
+                        >
+
+                    </div>
+
+
+                    <div class="recursos-gravacao">
+
+                        <button class="btn-acessar btn-gravar">
+                            🎙️ Gravar Resposta em Áudio
+                        </button>
+
+                    </div>
+
+
+                    <div class="campo-resposta">
+
+                        <input
+                            type="text"
+                            id="q2-charada2"
+                            placeholder="Digite a resposta aqui..."
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- QUESTÃO 3 -->
+
+        <section class="atividade-container" id="questao-3">
+
+            <h2>Questão 3 – Enigma dos Emojis</h2>
+
+            <div class="questoes-section">
+
+                <p class="enunciado">
+
+                    Escreva a inicial do nome de cada imagem para descobrir a mensagem secreta sobre as plantas:
+
+                </p>
+
+
+                <div class="enigma-box">
+
+                    <p class="emoji-linha">
+                        🐄 🏝️ 🐄 🍍 &nbsp;&nbsp;&nbsp;&nbsp; 🍍 🔔
+                    </p>
+
+                    <p class="emoji-linha">
+                        🦆 🦁 🍍 🚢 🐢 🍍 🔔
+                    </p>
+
+                </div>
+
+
+                <div class="imagem-container" style="margin: 15px 0;">
+
+                    <img
+                        src="maos-cuidando-planta.jpeg"
+                        alt="Ilustração de duas mãos segurando com cuidado uma pequena planta brotando do solo com um coração vermelho."
+                        class="img-responsiva"
+                    >
+
+                </div>
+
+
+                <div class="recursos-gravacao">
+
+                    <button class="btn-acessar btn-gravar">
+                        🎙️ Gravar Resposta em Áudio
+                    </button>
+
+                </div>
+
+
+                <div class="campo-resposta">
+
+                    <label for="resposta-q3">
+                        Mensagem Secreta Descoberta:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="resposta-q3"
+                        placeholder="Digite a frase secreta aqui..."
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FAIXA: ANIMAIS VERTEBRADOS E INVERTEBRADOS -->
+
+        <div class="titulo-conteudo animais-titulo">
+
+            <h2>🐾 Animais Vertebrados e Invertebrados</h2>
+
+        </div>
+
+
+        <!-- ANIMAL VERTEBRADO -->
+
+        <section class="atividade-container" id="animais-vertebrados">
+
+            <div class="animal-card">
+
+
+                <!-- IMAGEM DO ANIMAL -->
+
+                <div class="animal-imagem">
+
+                    <img
+                        src="Animal vertebrado.jpeg"
+                        alt="Imagem de um animal vertebrado"
+                        class="img-responsiva"
+                    >
+
+                </div>
+
+
+               <!-- TÍTULO: ANIMAL VERTEBRADO --> 
+
+                <div class="animal-texto">
+
+                    <h2 style="color: #0275d8 !important;">Animais Vertebrados</h2>
+
+                    <!-- TEXTO DO ANIMAL -->
+
+                    <p class="paragrafo-simplificado">
+
+                        Vetebrados 
+                        Os animais vertebrados são todas as criaturas que têm ossos por dentro, ou seja, eles possuem uma coluna vertebral e um crânio que protegem o seu corpo e o cérebro. Ao contrário dos invertebrados, eles formam um grupo menor no planeta, representando cerca de 5% de todas as espécies de animais do mundo. Esse esqueleto interno funciona como uma estrutura forte que permite que eles cresçam bastante, corram rápido e façam movimentos complexos. Eles são divididos em cinco grupos muito conhecidos por nós: os peixes que nadam na água, os anfíbios como os sapos, os répteis como os jacarés e cobras, as aves que possuem penas e voam, e os mamíferos, que são os animais que mamam quando filhotes — grupo do qual nós, os seres humanos, também fazemos parte.
+
+                    </p>
+
+
+                    <!-- BOTÃO PARA OUVIR -->
+
+                    <div class="audio-player">
+
+                        <button class="btn-acessar"
+                            aria-label="Ouvir texto sobre animais vertebrados">
+
+                            🔊 Clique para ouvir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VÍDEO DOS VERTEBRADOS -->
+
+        <section class="atividade-container" id="video-vertebrados">
+
+            <h2>Aprenda Mais Sobre os Animais Vertebrados</h2>
+
+
+            <div class="video-container">
+
+
+                <video controls>
+
+                    <source
+                        src="Video animais vertebrados.mp4"
+                        type="video/mp4"
+                    >
+
+                    Seu navegador não suporta a reprodução de vídeos.
+
+                </video>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANIMAL INVERTEBRADO -->
+
+        <section class="atividade-container" id="animais-invertebrados">
+
+            <div class="animal-card">
+
+
+                <!-- IMAGEM DO ANIMAL -->
+
+                <div class="animal-imagem">
+
+
+                    <img
+                        src="Animal invertebrado.jpeg"
+                        alt="Imagem de um animal invertebrado"
+                        class="img-responsiva"
+                    >
+
+                </div>
+
+
+                <!-- TITULO: ANIMAL INVERTEBRADO -->
+
+                <div class="animal-texto">
+
+                    <h2 style="color: #0275d8 !important;">Animais Invertebrados</h2>
+
+
+                    <!-- TEXTO DO ANIMAL -->
+
+                    <p class="paragrafo-simplificado">
+
+                        Invertebrados 
+                        Os animais invertebrados são todos aqueles que não têm ossos por dentro, ou seja, eles não possuem coluna vertebral e nem crânio. Eles estão por toda parte e representam a grande maioria do nosso planeta, sendo 95% de todas as espécies de animais que existem. Como eles não têm um esqueleto interno para ficar de pé, a natureza deu soluções incríveis para eles se protegerem: alguns usam uma armadura dura por fora do corpo, como as formigas, os besouros e os caranguejos; outros moram dentro de uma concha protetora, como os caracóis; e existem também aqueles que têm o corpo totalmente mole e livre, como as minhocas e os polvos.
+
+                    </p>
+
+
+                    <!-- BOTÃO PARA OUVIR -->
+
+                    <div class="audio-player">
+
+                        <button class="btn-acessar"
+                            aria-label="Ouvir texto sobre animais invertebrados">
+
+                            🔊 Clique para ouvir
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VÍDEO DOS INVERTEBRADOS -->
+
+        <section class="atividade-container" id="video-invertebrados">
+
+            <h2>Aprenda Mais Sobre os Animais Invertebrados</h2>
+
+
+            <div class="video-container">
+
+                <video controls>
+
+                    <source
+                        src="Video animais invertebrados.mp4"
+                        type="video/mp4"
+                    >
+
+                    Seu navegador não suporta a reprodução de vídeos.
+
+                </video>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Rodapé -->
+
+    <footer class="main-footer">
+
+        <p>
+            &copy; 2026 - PIBIC JR / SEDUC TEC
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

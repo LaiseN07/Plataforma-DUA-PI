@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biologia (Dislexia) - DUA-PI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra de Acessibilidade -->
+    <header class="accessibility-bar">
+        <div class="container-flex">
+            <span class="logo">Acessibilidade:</span>
+
+            <div class="buttons-group">
+                <button id="btn-contraste" aria-label="Alternar alto contraste">
+                    🌓 Alto Contraste
+                </button>
+
+                <button id="btn-aumentar" aria-label="Aumentar fonte">
+                    A+
+                </button>
+
+                <button id="btn-diminuir" aria-label="Diminuir fonte">
+                    A-
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+
+        <div class="container">
+
+            <div class="header-top">
+                <a href="index.html" class="btn-voltar">
+                    ← Voltar para o Início
+                </a>
+            </div>
+
+            <h1>Biologia</h1>
+
+            <p>
+                Plataforma DUA-PI • Biologia - Conteúdo Adaptado para Dislexia
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+
+        <!-- FAIXA: INTRODUÇÃO -->
+
+        <div class="titulo-conteudo">
+            <h2>🐾 Animais Vertebrados e Invertebrados</h2>
+        </div>
+
+        <section class="atividade-container" id="introducao-animais">
+            <h2>O que são os Animais?</h2>
+            <div class="animal-card">
+                <div class="animal-texto">
+                    <div class="audio-player">
+                        <button class="btn-acessar" aria-label="Ouvir texto sobre animais">
+                            🔊 Ouvir Texto
+                        </button>
+                    </div>
+                    <p class="paragrafo-simplificado">
+                        Existem muitos tipos de animais. Alguns vivem na água, outros vivem na terra e alguns podem voar.
+                    </p>
+                    <p class="paragrafo-simplificado">
+                        Os animais podem ser classificados em dois grupos principais: <strong>vertebrados</strong> e <strong>invertebrados</strong>. Vamos descobrir a diferença entre eles!
+                    </p>
+                </div>
+
+                <div class="animal-imagem">
+                    <img src="animais.jpeg" alt="Ilustração com vários animais na natureza." class="img-responsiva">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAIXA: ANIMAIS VERTEBRADOS -->
+
+        <div class="titulo-conteudo">
+            <h2>🦴 Animais Vertebrados</h2>
+        </div>
+
+        <section class="atividade-container" id="vertebrados">
+            <h2>O que são Animais Vertebrados?</h2>
+            <div class="animal-card">
+                <div class="animal-texto">
+                    <div class="audio-player">
+                        <button class="btn-acessar" aria-label="Ouvir texto sobre animais vertebrados">
+                            🔊 Ouvir Texto
+                        </button>
+                    </div>
+                    <p class="paragrafo-simplificado">
+                        Os <strong>animais vertebrados</strong> possuem coluna vertebral.
+                    </p>
+                    <p class="paragrafo-simplificado">
+                        A coluna vertebral faz parte do esqueleto e ajuda a sustentar o corpo.
+                    </p>
+                </div>
+
+                <div class="animal-imagem">
+                    <img src="cachorro.jpeg" alt="Ilustração de um cachorro, exemplo de animal vertebrado." class="img-responsiva">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAIXA: ANIMAIS INVERTEBRADOS -->
+
+        <div class="titulo-conteudo">
+            <h2>🐛 Animais Invertebrados</h2>
+        </div>
+
+        <section class="atividade-container" id="invertebrados">
+            <h2>O que são Animais Invertebrados?</h2>
+            <div class="animal-card">
+                <div class="animal-texto">
+                    <div class="audio-player">
+                        <button class="btn-acessar" aria-label="Ouvir texto sobre animais invertebrados">
+                            🔊 Ouvir Texto
+                        </button>
+                    </div>
+                    <p class="paragrafo-simplificado">
+                        Os <strong>animais invertebrados</strong> não possuem coluna vertebral.
+                    </p>
+                    <p class="paragrafo-simplificado">
+                        Eles podem ter diferentes tamanhos, cores e formatos.
+                    </p>
+                </div>
+
+                <div class="animal-imagem">
+                    <img src="borboleta.jpeg" alt="Ilustração de uma borboleta, exemplo de animal invertebrado." class="img-responsiva">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ATIVIDADES / QUESTÕES (DISLEXIA) -->
+
+        <div class="titulo-conteudo">
+            <h2>📝 Atividades</h2>
+        </div>
+
+        <!-- QUESTÃO 1 -->
+        <section class="atividade-container" id="questao-1" data-correta="B">
+            <h2>Questão 1</h2>
+            <div class="questoes-section">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir enunciado da questão 1">
+                        🔊 Ouvir Questão
+                    </button>
+                </div>
+                <p class="enunciado">
+                    Qual animal é invertebrado?
+                </p>
+                <div class="opcoes-container" style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
+                    <button class="btn-opcao" data-valor="A" style="flex: 1; min-width: 140px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="cachorro 2.jpeg" alt="Cachorro" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>A) Cachorro</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="B" style="flex: 1; min-width: 140px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="borboletinha.jpeg" alt="Borboleta" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>B) Borboleta</span>
+                    </button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 2 -->
+        <section class="atividade-container" id="questao-2" data-correta="A">
+            <h2>Questão 2</h2>
+            <div class="questoes-section">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir enunciado da questão 2">
+                        🔊 Ouvir Questão
+                    </button>
+                </div>
+                <p class="enunciado">
+                    Qual animal possui coluna vertebral?
+                </p>
+                <div class="opcoes-container" style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
+                    <button class="btn-opcao" data-valor="A" style="flex: 1; min-width: 140px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="peixinho 2.jpeg" alt="Peixe" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>A) Peixe</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="B" style="flex: 1; min-width: 140px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="polvo.jpeg" alt="Polvo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>B) Polvo</span>
+                    </button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 3 -->
+        <section class="atividade-container" id="questao-3" data-correta="A">
+            <h2>Questão 3</h2>
+            <div class="questoes-section">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir enunciado da questão 3">
+                        🔊 Ouvir Questão
+                    </button>
+                </div>
+                <p class="enunciado">
+                    Marque a opção correta. A coluna vertebral faz parte de:
+                </p>
+                <div class="opcoes-container" style="display: flex; flex-direction: column; gap: 12px; margin-top: 15px;">
+                    <button class="btn-opcao" data-valor="A" style="display: flex; align-items: center; gap: 15px; text-align: left; padding: 10px 15px;">
+                        <img src="esqueleto.jpeg" alt="Esqueleto" style="width: 60px; height: 60px; object-fit: contain;">
+                        <span>A) Esqueleto</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="B" style="display: flex; align-items: center; gap: 15px; text-align: left; padding: 10px 15px;">
+                        <img src="pena.jpeg" alt="Pena" style="width: 60px; height: 60px; object-fit: contain;">
+                        <span>B) Pena</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="C" style="display: flex; align-items: center; gap: 15px; text-align: left; padding: 10px 15px;">
+                        <img src="asa.jpeg" alt="Asa" style="width: 60px; height: 60px; object-fit: contain;">
+                        <span>C) Asa</span>
+                    </button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+        <!-- QUESTÃO 4 -->
+        <section class="atividade-container" id="questao-4" data-correta="C">
+            <h2>Questão 4</h2>
+            <div class="questoes-section">
+                <div class="audio-player">
+                    <button class="btn-acessar" aria-label="Ouvir enunciado da questão 4">
+                        🔊 Ouvir Questão
+                    </button>
+                </div>
+                <p class="enunciado">
+                    Qual animal é vertebrado?
+                </p>
+                <div class="opcoes-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 15px;">
+                    <button class="btn-opcao" data-valor="A" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="sapo.jpeg" alt="Sapo" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>A) Sapo</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="B" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="caracol.jpeg" alt="Caracol" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>B) Caracol</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="C" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="gato.jpeg" alt="Gato" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>C) Gato</span>
+                    </button>
+                    <button class="btn-opcao" data-valor="D" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 12px;">
+                        <img src="estrela mar.jpeg" alt="Estrela-do-mar" style="width: 80px; height: 80px; object-fit: contain; margin-bottom: 8px;">
+                        <span>D) Estrela-do-mar</span>
+                    </button>
+                </div>
+                <div class="feedback-resposta"></div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 - PIBIC JR / SEDUC TEC</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
